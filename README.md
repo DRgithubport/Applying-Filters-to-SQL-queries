@@ -58,10 +58,16 @@ Confirm your selection:  <br/>
 My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update. The following code demonstrates how I created a SQL query to  lter for employee machines from employees in the Marketing department in the East building.
 <br/>
 <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DRgithubport/Applying-Filters-to-SQL-queries/assets/159063432/a69cef22-97eb-49d0-8979-710041878b25"/>
 <br />
-<br />
-Wait for process to complete (may take some time):  <br/>
+The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Marketing department in the East building. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with AND to filter for employees who work in the Marketing department and in the East building. I used LIKE with East% as the pattern to match because the data in the office column represents the East building with the specific office number. The first condition is the department = 'Marketing' portion, which filters for employees in the Marketing department. The second condition is the office LIKE 'East%' portion, which filters for employees in the East building.
+<br/>
+<br/>
+<h3>Retrieve employees in Finance or Sales</h3>
+<br/>
+The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments. The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Finance or Sales departments.
+<br/>
+<br/>
 <img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
