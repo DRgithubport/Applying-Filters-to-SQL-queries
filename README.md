@@ -47,10 +47,17 @@ filters for logins on 2022-05-09. The second condition is login_date = '2022-05-
 After investigating the organization’s data on login a empts, I believe there is an issue with the login a empts that occurred outside of Mexico. These login attempts should be investigated. The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico.
 <br/>
 <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DRgithubport/Applying-Filters-to-SQL-queries/assets/159063432/f77a6dac-b2d5-46b6-b474-9c062e5f1458"/>
 <br />
-<br />
+The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred in countries other than Mexico. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with NOT to filter for countries other than Mexico. I used LIKE with MEX% as the pattern to match because the dataset represents Mexico as MEX and MEXICO. The percentage sign (%) represents any number of unspecified characters when used with LIKE.
 Confirm your selection:  <br/>
+<br/>
+<br/>
+<h3>Retrieve employees in Marketing</h3>
+<br/>
+My team wants to update the computers for certain employees in the Marketing department. To do this, I have to get information on which employee machines to update. The following code demonstrates how I created a SQL query to  lter for employee machines from employees in the Marketing department in the East building.
+<br/>
+<br/>
 <img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
