@@ -36,10 +36,17 @@ The following code demonstrates how I created a SQL query to filter for login at
 <br/>
 <br/>
 
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DRgithubport/Applying-Filters-to-SQL-queries/assets/159063432/749a8929-cd63-4cb5-a49e-94201ee28e46"/>
 <br />
-<br />
-Enter the number of passes: <br/>
+The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all login attempts that occurred on 2022-05-09 or 2022-05-08. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an OR operator to filter my results to output only login attempts that occurred on either 2022-05-09 or 2022-05-08. The first condition is login_date = '2022-05-09', which
+filters for logins on 2022-05-09. The second condition is login_date = '2022-05-08', which filters for logins on 2022-05-08. <br/>
+<br/>
+<br/>
+<h3>Retrieve login attempts outside of Mexico</h3>
+<br/>
+After investigating the organization’s data on login a empts, I believe there is an issue with the login a empts that occurred outside of Mexico. These login attempts should be investigated. The following code demonstrates how I created a SQL query to filter for login attempts that occurred outside of Mexico.
+<br/>
+<br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
