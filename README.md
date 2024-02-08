@@ -68,10 +68,18 @@ The first part of the screenshot is my query, and the second part is a portion o
 The machines for employees in the Finance and Sales departments also need to be updated. Since a different security update is needed, I have to get information on employees only from these two departments. The following code demonstrates how I created a SQL query to filter for employee machines from employees in the Finance or Sales departments.
 <br/>
 <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DRgithubport/Applying-Filters-to-SQL-queries/assets/159063432/9faf36e4-6df5-4e32-b9cd-13568901c5f1"/>
 <br />
-<br />
-Sanitization complete:  <br/>
+The first part of the screenshot is my query, and the second part is a portion of the output. This query returns all employees in the Finance and Sales departments. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with OR to filter for employees who are in the Finance and Sales departments. I used the OR operator instead of AND because I want all employees who are in either department. The first condition is department = 'Finance', which filters for employees from the Finance department. The
+second condition is department = 'Sales', which filters for employees from the Sales department.
+<br/>
+<br/>
+<h3>Retrieve all employees not in IT</h3>
+<br/>
+My team needs to make one more security update on employees who are not in the Information Technology department. To make the update, I first have to get information on these employees.
+The following demonstrates how I created a SQL query to  lter for employee machines from employees not in the Information Technology department.
+<br/>
+<br/>
 <img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
