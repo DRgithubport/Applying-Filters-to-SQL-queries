@@ -16,10 +16,26 @@ computers as needed. The following steps provide examples of how I used SQL with
 <h2>Program walk-through:</h2>
 
 <h3>Retrieve after hours failed login attempts</h3>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+There was a potential security incident that occurred after business hours (after 18:00). All after hours login attempts that failed need to be investigated.
+<br />
+
+The following code demonstrates how I created a SQL query to filter for failed login attempts that occurred after business hours:
+<br />
+
+<img src="https://github.com/DRgithubport/Applying-Filters-to-SQL-queries/assets/159063432/b0ffc730-eef7-4731-809f-aaaabb32ca7f"/>
+<br />
+The first part of the screenshot is my query, and the second part is a portion of the output. This query filters for failed login attempts that occurred after 18:00. First, I started by selecting all data from the log_in_attempts table. Then, I used a WHERE clause with an AND operator to filter my results to output only login attempts that occurred after 18:00 and were unsuccessful. The first condition is login_time > '18:00', which filters for the login
+attempts that occurred after 18:00. The second condition is success = FALSE, which filters for the failed login attempts.
 <br />
 <br />
-Select the disk:  <br/>
+<h3>Retrieve login attempts on specific dates</h3>
+<br/>
+A suspicious event occurred on 2022-05-09. Any login activity that happened on 2022-05-09 or on the day before needs to be investigated.
+The following code demonstrates how I created a SQL query to filter for login attempts that occurred on specific dates.
+<br/>
+<br/>
+
 <img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
