@@ -80,11 +80,14 @@ My team needs to make one more security update on employees who are not in the I
 The following demonstrates how I created a SQL query to  lter for employee machines from employees not in the Information Technology department.
 <br/>
 <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/DRgithubport/Applying-Filters-to-SQL-queries/assets/159063432/061e0e5f-e452-45e4-bcc6-92e563c79fca"/>
 <br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+The first part of the screenshot is my query, and the second part is a portion of the output. The query returns all employees not in the Information Technology department. First, I started by selecting all data from the employees table. Then, I used a WHERE clause with NOT to  filter for employees not in this department.
+<br/>
+<br/>
+<h3>Summary</h3>
+I applied filters to SQL queries to get specific information on login attempts and employee machines. I used two different tables, log_in_attempts and employees. I used the AND,
+OR, and NOT operators to filter for the specific information needed for each task. I also used LIKE and the percentage sign (%) wildcard to filter for patterns.
 </p>
 
 <!--
